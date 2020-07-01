@@ -1216,3 +1216,9 @@ p.help-block li {
     height: 70px;
     margin: 0 auto;
 }
+
+
+/* Fix Fero Banner */
+#hero .hero-content h2 span {
+  font-size: 4vw;
+}
