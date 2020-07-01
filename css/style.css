@@ -131,7 +131,6 @@ h1, h2, h3, h4, h5, h6 {
 #header #logo h1 {
   font-size: 28px;
   margin: 6px 0 0 0;
-  padding: 0;
   line-height: 1;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -152,6 +151,12 @@ h1, h2, h3, h4, h5, h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
+  filter: grayscale(1) brightness(10);
+  transition: .5s;
+}
+
+.is-sticky #header #logo img {
+  filter: grayscale(0) brightness(1);
 }
 
 .is-sticky #header {
@@ -214,7 +219,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .hero-content h2 span {
   color: #fff;
   text-align: right;
-  font-size: 66px;
+  font-size: 60px;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -537,9 +542,6 @@ Inner Banner
 	font-weight:bold;
 	font-size:38px;
 	text-align:center;
-}
-.svgImg{
-	
 }
 .svgImg img{
 	width:120px;
@@ -1065,7 +1067,6 @@ p.help-block li {
 
 #contact .contact-info i {
   font-size: 24px;
-  display: inline-block;
   margin-bottom: 0;
   color: #07cc91;
   float: left;
@@ -1114,8 +1115,6 @@ p.help-block li {
 }
 
 @media (min-width: 768px) {
-  #contact .contact-phone {
-  }
 }
 
 #contact #google-map {
